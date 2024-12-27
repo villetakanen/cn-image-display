@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "ESNext",
+      "lib": ["ES2022", "DOM", "DOM.Iterable"],
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "outDir": "./dist", // Specify output directory
+      "declaration": true,  // Generate declaration files (.d.ts)
+      "declarationMap": true,
+      "allowImportingTsExtensions": true,
+      "noEmit": true,
+      "experimentalDecorators": true,
+      "useDefineForClassFields": false, // https://lit.dev/docs/components/properties/#avoiding-issues-with-class-fields
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+  }

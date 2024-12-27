@@ -1,0 +1,38 @@
+{
+  "name": "cn-ïmage-display",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "vite build",
+    "prepare": "pnpm run build",
+    "lint": "biome lint src",
+    "format": "biome format --write src",
+    "check": "biome check --write src",
+    "ci": "biome ci src",
+    "test": "vitest",
+    "start": "vite"
+  },
+  "type": "module",
+  "main": "./dist/mcn-image-display.umd.js",
+  "module": "./dist/cn-image-display.es.js",
+  "types": "./dist/cn-image-display.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/cn-image-display.es.js",
+      "require": "./dist/cn-image-display.umd.js",
+      "types": "./dist/cn-image-display.d.ts"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.6",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  }
+}

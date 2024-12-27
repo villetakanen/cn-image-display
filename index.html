@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyan Image Display</title>
+<style>
+    .tester {
+        container-type: inline-size;
+        container-name: tester;
+        width: 420px;
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+  <article class="tester">
+    <cn-image-display id="display-1"></cn-image-display>
+    <br>
+    <br>
+    <cn-image-display id="display-2"></cn-image-display>
+  </article>
+
+  <script type="module">
+    import './src/cn-image-display.ts';
+
+    async function setGalleryImages(galleryElement, images) {
+      galleryElement.images = images;
+      await galleryElement.updateComplete; // Wait for update to complete
+    }
+
+    const gallery2 = document.querySelector('#display-2');
+    setGalleryImages(gallery2, [
+      { src: 'https://picsum.photos/200/300', caption: 'Image 1' },
+      { src: 'https://picsum.photos/300/200', caption: 'Image 2' },
+    ]);
+
+    const gallery1 = document.querySelector('#display-1');
+    setGalleryImages(gallery1, [
+        { src: 'https://picsum.photos/700/1200', caption: 'Image 1' },
+        ]
+    )
+    
+  </script>
+</body>
+</html>
