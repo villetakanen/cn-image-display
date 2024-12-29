@@ -18,7 +18,7 @@ export class CnImageDisplay extends LitElement {
       display: block;
       width: 100%;
       aspect-ratio: 16 / 9;
-      background: var(--cn-image-display-background, red);
+      background: var(--cn-image-display-background, cyan);
       border-radius: var(--cn-image-display-border-radius, 0.5rem);
       padding: var(--cn-image-display-inner-spacing, 0);
     }
@@ -45,6 +45,8 @@ export class CnImageDisplay extends LitElement {
       gap: var(--cn-image-display-inner-spacing, 0);
       flex-wrap: nowrap;
       overflow-x: scroll;
+      position: relative;
+      scrollbar-color: var(--cn-image-display-scrollbar-color, cyan) transparent;
     }
     :host .square-figure {
       flex-grow: 0;
@@ -57,7 +59,6 @@ export class CnImageDisplay extends LitElement {
       object-fit: cover;
       object-position: center;
     }
-
   `;
 
 render() {
