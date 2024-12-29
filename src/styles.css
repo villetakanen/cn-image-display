@@ -1,0 +1,11 @@
+cn-image-display {
+  --_default-bg: light-dark(#eee, black);
+  --_default-border-radius: 0.5rem;
+  --_default-image-border-radius: calc(var(--_default-border-radius) * 0.75);
+  --_default-inner-spacing: 0.25rem;
+
+  --cn-image-display-background: var(--_default-bg);
+  --cn-image-display-border-radius: var(--_default-border-radius);
+  --cn-image-display-image-border-radius: var(--_default-image-border-radius);
+  --cn-image-display-inner-spacing: var(--_default-inner-spacing);
+}

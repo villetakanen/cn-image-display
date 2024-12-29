@@ -1,6 +1,6 @@
 {
-  "name": "cn-ïmage-display",
-  "version": "1.0.0",
+  "name": "cn-image-display",
+  "version": "0.0.1-a1",
   "description": "",
   "scripts": {
     "build": "vite build",
@@ -13,7 +13,7 @@
     "start": "vite"
   },
   "type": "module",
-  "main": "./dist/mcn-image-display.umd.js",
+  "main": "./dist/cn-image-display.umd.js",
   "module": "./dist/cn-image-display.es.js",
   "types": "./dist/cn-image-display.d.ts",
   "exports": {

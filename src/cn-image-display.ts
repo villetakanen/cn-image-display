@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import './styles.css'
 
 interface Image {
   src: string;
@@ -17,7 +18,12 @@ export class CnImageDisplay extends LitElement {
       display: block;
       width: 100%;
       aspect-ratio: 16 / 9;
-      background-color: #f0f0f0;
+      background: var(--cn-image-display-background, red);
+      border-radius: var(--cn-image-display-border-radius, 0.5rem);
+      padding: var(--cn-image-display-inner-spacing, 0);
+    }
+    :host img {
+      border-radius: var(--cn-image-display-border-radius, 0.5rem);
     }
     :host .single-figure {
       margin: 0;
@@ -36,15 +42,14 @@ export class CnImageDisplay extends LitElement {
     :host .flex-container {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--cn-grid, 0.5rem);
+      gap: var(--cn-image-display-inner-spacing, 0);
       flex-wrap: nowrap;
-      overflow-x: auto;
+      overflow-x: scroll;
     }
     :host .square-figure {
       flex-grow: 0;
       flex-shrink: 0;
       margin: 0;
-      padding: calc(var(--cn-grid, 0.5rem) / 2);
     }
     :host .square-figure img {
       aspect-ratio: 1 / 1;
