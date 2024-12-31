@@ -38,6 +38,10 @@ export class CnLightbox extends LitElement {
     :host .caption {
       margin: 0 auto;
       text-align: center;
+      max-width: 200px;
+      max-height: var(--cn-line, 1.2em);
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     :host .flex-container {
       display: flex;
@@ -52,6 +56,7 @@ export class CnLightbox extends LitElement {
       flex-grow: 0;
       flex-shrink: 0;
       margin: 0;
+      position: relative;
     }
     :host .square-figure img {
       aspect-ratio: 1 / 1;
