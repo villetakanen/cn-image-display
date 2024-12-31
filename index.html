@@ -18,14 +18,14 @@
 </head>
 <body>
   <article class="tester">
-    <cn-image-display id="display-1"></cn-image-display>
+    <cn-lightbox id="display-1"></cn-lightbox>
     <br>
     <br>
-    <cn-image-display id="display-2"></cn-image-display>
+    <cn-lightbox id="display-2"></cn-lightbox>
   </article>
 
   <script type="module">
-    import './src/cn-image-display.ts';
+    import './src/cn-lightbox.ts';
 
     async function setGalleryImages(galleryElement, images) {
       galleryElement.images = images;

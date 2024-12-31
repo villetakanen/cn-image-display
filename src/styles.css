@@ -1,4 +1,4 @@
-cn-image-display {
+cn-lightbox {
   --_default-bg: light-dark(#eee, black);
   --_default-color: light-dark(black, white);
   --_default-border-radius: 0.5rem;
@@ -11,11 +11,11 @@ cn-image-display {
 
   --_cn-theme-scrollbar-color: var(--chroma-primary-80);
 
-  --cn-image-display-background: var(--_cn-theme-bg, var(--_default-bg));
-  --cn-image-display-border-radius: var(
+  --cn-lightbox-background: var(--_cn-theme-bg, var(--_default-bg));
+  --cn-lightbox-border-radius: var(
     --cn-border-radius, 
     var(--_default-border-radius));
-  --cn-image-display-image-border-radius: var(--_default-image-border-radius);
-  --cn-image-display-inner-spacing: var(--_default-inner-spacing);
-  --cn-image-display-scrollbar-color: var(--_cn-theme-scrollbar-color, var(--_default-color));
+  --cn-lightbox-image-border-radius: var(--_default-image-border-radius);
+  --cn-lightbox-inner-spacing: var(--_default-inner-spacing);
+  --cn-lightbox-scrollbar-color: var(--_cn-theme-scrollbar-color, var(--_default-color));
 }

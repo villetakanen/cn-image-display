@@ -7,8 +7,8 @@ interface Image {
   caption: string;
 }
 
-@customElement('cn-image-display')
-export class CnImageDisplay extends LitElement {
+@customElement('cn-lightbox')
+export class CnLightbox extends LitElement {
   @property({ type: Array, reflect: true })
   images: Image[] = [];
 
@@ -18,12 +18,12 @@ export class CnImageDisplay extends LitElement {
       display: block;
       width: 100%;
       aspect-ratio: 16 / 9;
-      background: var(--cn-image-display-background, cyan);
-      border-radius: var(--cn-image-display-border-radius, 0.5rem);
-      padding: var(--cn-image-display-inner-spacing, 0);
+      background: var(--cn-lightbox-background, cyan);
+      border-radius: var(--cn-lightbox-border-radius, 0.5rem);
+      padding: var(--cn-lightbox-inner-spacing, 0);
     }
     :host img {
-      border-radius: var(--cn-image-display-border-radius, 0.5rem);
+      border-radius: var(--cn-lightbox-border-radius, 0.5rem);
     }
     :host .single-figure {
       margin: 0;
@@ -42,11 +42,11 @@ export class CnImageDisplay extends LitElement {
     :host .flex-container {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--cn-image-display-inner-spacing, 0);
+      gap: var(--cn-lightbox-inner-spacing, 0);
       flex-wrap: nowrap;
       overflow-x: scroll;
       position: relative;
-      scrollbar-color: var(--cn-image-display-scrollbar-color, cyan) transparent;
+      scrollbar-color: var(--cn-lightbox-scrollbar-color, cyan) transparent;
     }
     :host .square-figure {
       flex-grow: 0;

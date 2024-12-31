@@ -1,6 +1,6 @@
 {
-  "name": "cn-image-display",
-  "version": "0.0.1-b1",
+  "name": "cn-lightbox",
+  "version": "1.0.0-b1",
   "description": "",
   "scripts": {
     "build": "vite build",
@@ -13,14 +13,14 @@
     "start": "vite"
   },
   "type": "module",
-  "main": "./dist/cn-image-display.umd.js",
-  "module": "./dist/cn-image-display.es.js",
-  "types": "./dist/cn-image-display.d.ts",
+  "main": "./dist/cn-lightbox.umd.js",
+  "module": "./dist/cn-lightbox.es.js",
+  "types": "./dist/cn-lightbox.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/cn-image-display.es.js",
-      "require": "./dist/cn-image-display.umd.js",
-      "types": "./dist/cn-image-display.d.ts"
+      "import": "./dist/cn-lightbox.es.js",
+      "require": "./dist/cn-lightbox.umd.js",
+      "types": "./dist/cn-lightbox.d.ts"
     }
   },
   "keywords": [],
